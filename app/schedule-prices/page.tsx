@@ -36,7 +36,7 @@ export default function SchedulePricesPage() {
                 </div>
                 <h1
                   className="text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-wide text-balance"
-                  style={{ color: 'var(--foreground)' }}
+                  style={{ color: 'white' }}
                 >
                   Расписание <span style={{ color: 'var(--gold)' }}>и цены</span>
                 </h1>

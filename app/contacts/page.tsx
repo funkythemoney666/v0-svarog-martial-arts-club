@@ -34,7 +34,7 @@ export default function ContactsPage() {
                 </div>
                 <h1
                   className="text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-wide text-balance"
-                  style={{ color: 'var(--foreground)' }}
+                  style={{ color: 'white' }}
                 >
                   Контакты и <span style={{ color: 'var(--gold)' }}>адрес</span>
                 </h1>

@@ -35,7 +35,7 @@ export default function CoachesPage() {
                 </div>
                 <h1
                   className="text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-wide text-balance"
-                  style={{ color: 'var(--foreground)' }}
+                  style={{ color: 'white' }}
                 >
                   Наши <span style={{ color: 'var(--gold)' }}>тренеры</span>
                 </h1>
