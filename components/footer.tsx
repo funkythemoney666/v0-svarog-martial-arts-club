@@ -9,11 +9,13 @@ export function Footer() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Column 1: About */}
+          {/* Column 1: Logo & About */}
           <div className="lg:col-span-1">
-            <div className="text-2xl font-display tracking-widest mb-4">
-              <span style={{ color: 'var(--gold)' }}>С</span>ВАРОГ
-            </div>
+            <img
+              src="/images/svarog-logo.png"
+              alt="Сварог"
+              className="h-20 w-auto mb-4"
+            />
             <p className="text-sm leading-relaxed" style={{ color: 'var(--silver)' }}>
               Клуб единоборств «Сварог» — современный спортивный клуб в СВАО Москвы. Мы предлагаем тренировки по боксу, ММА, грэпплингу, тайскому боксу и другим единоборствам для детей и взрослых всех уровней подготовки.
             </p>

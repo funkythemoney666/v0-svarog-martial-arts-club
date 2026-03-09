@@ -20,18 +20,27 @@ export default function CoachesPage() {
           style={{ backgroundColor: 'var(--dark-bg)' }}
         >
           <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-px w-10" style={{ backgroundColor: 'var(--gold)' }} />
-              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--gold)' }}>
-                Команда
-              </span>
+            <div className="flex items-center gap-6 mb-8">
+              <img
+                src="/images/svarog-logo.png"
+                alt="Сварог"
+                className="h-24 w-auto"
+              />
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-10" style={{ backgroundColor: 'var(--gold)' }} />
+                  <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--gold)' }}>
+                    Команда
+                  </span>
+                </div>
+                <h1
+                  className="text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-wide text-balance"
+                  style={{ color: 'var(--foreground)' }}
+                >
+                  Наши <span style={{ color: 'var(--gold)' }}>тренеры</span>
+                </h1>
+              </div>
             </div>
-            <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-wide text-balance"
-              style={{ color: 'var(--foreground)' }}
-            >
-              Наши <span style={{ color: 'var(--gold)' }}>тренеры</span>
-            </h1>
             <p className="mt-4 text-base max-w-xl" style={{ color: 'var(--silver)' }}>
               Мастера спорта и опытные практики с многолетним соревновательным и тренерским стажем.
             </p>

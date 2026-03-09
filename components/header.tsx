@@ -38,10 +38,12 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-2xl lg:text-3xl font-display tracking-widest text-[var(--foreground)] bg-background px-0 py-0 leading-none">
-              <span className="text-gold">С</span>ВАРОГ
-            </span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <img
+              src="/images/svarog-logo.png"
+              alt="Сварог"
+              className="h-12 lg:h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}

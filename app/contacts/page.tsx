@@ -19,18 +19,27 @@ export default function ContactsPage() {
           style={{ backgroundColor: 'var(--dark-bg)' }}
         >
           <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-px w-10" style={{ backgroundColor: 'var(--gold)' }} />
-              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--gold)' }}>
-                Как нас найти
-              </span>
+            <div className="flex items-center gap-6 mb-8">
+              <img
+                src="/images/svarog-logo.png"
+                alt="Сварог"
+                className="h-24 w-auto"
+              />
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-10" style={{ backgroundColor: 'var(--gold)' }} />
+                  <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--gold)' }}>
+                    Как нас найти
+                  </span>
+                </div>
+                <h1
+                  className="text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-wide text-balance"
+                  style={{ color: 'var(--foreground)' }}
+                >
+                  Контакты и <span style={{ color: 'var(--gold)' }}>адрес</span>
+                </h1>
+              </div>
             </div>
-            <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-wide text-balance"
-              style={{ color: 'var(--foreground)' }}
-            >
-              Контакты и <span style={{ color: 'var(--gold)' }}>адрес</span>
-            </h1>
           </div>
         </div>
 

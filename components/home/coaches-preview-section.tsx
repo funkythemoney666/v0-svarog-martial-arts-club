@@ -28,17 +28,24 @@ export function CoachesPreviewSection() {
     <section className="py-20 lg:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-px w-10" style={{ backgroundColor: 'var(--gold)' }} />
-              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--gold)' }}>
-                Тренеры
-              </span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-14">
+          <div className="flex items-center gap-6">
+            <img
+              src="/images/svarog-logo.png"
+              alt="Сварог"
+              className="h-20 w-auto"
+            />
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-px w-10" style={{ backgroundColor: 'var(--gold)' }} />
+                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--gold)' }}>
+                  Тренеры
+                </span>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-display uppercase tracking-wide text-balance">
+                Наши <span style={{ color: 'var(--gold)' }}>тренеры</span>
+              </h2>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-display uppercase tracking-wide text-balance">
-              Наши <span style={{ color: 'var(--gold)' }}>тренеры</span>
-            </h2>
           </div>
           <Link
             href="/coaches"
