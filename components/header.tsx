@@ -55,9 +55,9 @@ export function Header() {
                 className={`text-sm font-medium tracking-wide uppercase transition-colors duration-200 ${
                   pathname === link.href
                     ? 'text-gold'
-                    : 'text-foreground/80 hover:text-gold'
+                    : 'hover:text-gold'
                 }`}
-                style={{ color: pathname === link.href ? 'var(--gold)' : undefined }}
+                style={{ color: pathname === link.href ? 'var(--gold)' : 'white' }}
               >
                 {link.label}
               </Link>
@@ -68,8 +68,8 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-6">
             <a
               href="tel:+74954748294"
-              className="flex items-center gap-2 text-sm text-foreground/80 hover:text-gold transition-colors"
-              style={{ color: undefined }}
+              className="flex items-center gap-2 text-sm hover:text-gold transition-colors"
+              style={{ color: 'white' }}
             >
               <Phone className="w-4 h-4" style={{ color: 'var(--gold)' }} />
               <span>+7 (495) 474-82-94</span>
@@ -86,8 +86,9 @@ export function Header() {
           {/* Mobile toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded text-foreground/80 hover:text-foreground transition-colors"
+            className="lg:hidden p-2 rounded transition-colors"
             aria-label={isOpen ? 'Закрыть меню' : 'Открыть меню'}
+            style={{ color: 'white' }}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -107,10 +108,10 @@ export function Header() {
               key={link.href}
               href={link.href}
               className={`text-base font-medium uppercase tracking-wide py-2 border-b transition-colors ${
-                pathname === link.href ? 'text-gold border-gold/30' : 'text-foreground/80 border-[var(--dark-border)] hover:text-gold'
+                pathname === link.href ? 'text-gold border-gold/30' : 'border-[var(--dark-border)] hover:text-gold'
               }`}
               style={{
-                color: pathname === link.href ? 'var(--gold)' : undefined,
+                color: pathname === link.href ? 'var(--gold)' : 'white',
                 borderBottomColor: pathname === link.href ? 'var(--gold)' : undefined,
               }}
             >
@@ -119,7 +120,8 @@ export function Header() {
           ))}
           <a
             href="tel:+74954748294"
-            className="flex items-center gap-2 py-2 text-foreground/80 hover:text-gold transition-colors"
+            className="flex items-center gap-2 py-2 hover:text-gold transition-colors"
+            style={{ color: 'white' }}
           >
             <Phone className="w-4 h-4" style={{ color: 'var(--gold)' }} />
             <span>+7 (495) 474-82-94</span>
