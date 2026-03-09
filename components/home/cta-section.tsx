@@ -27,7 +27,7 @@ export function CtaSection() {
             </div>
             <h2
               className="text-4xl lg:text-5xl xl:text-6xl font-display uppercase tracking-wide text-balance leading-none mb-6"
-              style={{ color: 'var(--foreground)' }}
+              style={{ color: 'white' }}
             >
               Запишитесь на тренировку в <span style={{ color: 'var(--gold)' }}>«Сварог»</span>
             </h2>
@@ -48,7 +48,7 @@ export function CtaSection() {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-widest mb-0.5" style={{ color: 'var(--silver)' }}>Телефон</div>
-                  <div className="text-sm font-semibold group-hover:text-gold transition-colors" style={{ color: 'var(--foreground)' }}>
+                  <div className="text-sm font-semibold group-hover:text-gold transition-colors" style={{ color: 'white' }}>
                     +7 (495) 474-82-94
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export function CtaSection() {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-widest mb-0.5" style={{ color: 'var(--silver)' }}>Телефон</div>
-                  <div className="text-sm font-semibold group-hover:text-gold transition-colors" style={{ color: 'var(--foreground)' }}>
+                  <div className="text-sm font-semibold group-hover:text-gold transition-colors" style={{ color: 'white' }}>
                     +7 (916) 231-32-20
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export function CtaSection() {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-widest mb-0.5" style={{ color: 'var(--silver)' }}>Адрес</div>
-                  <div className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
+                  <div className="text-sm font-semibold" style={{ color: 'white' }}>
                     ул. Малыгина, д. 3, стр. 2
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export function CtaSection() {
             className="p-8 border"
             style={{ borderColor: 'var(--dark-border)', backgroundColor: 'var(--dark-surface)' }}
           >
-            <h3 className="text-xl font-bold uppercase tracking-wide mb-6" style={{ color: 'var(--foreground)' }}>
+            <h3 className="text-xl font-bold uppercase tracking-wide mb-6" style={{ color: 'white' }}>
               Оставить заявку
             </h3>
             <SignupForm dark />

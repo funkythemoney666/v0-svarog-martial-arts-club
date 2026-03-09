@@ -50,7 +50,7 @@ export function WhyUsSection() {
           </div>
           <h2
             className="text-4xl lg:text-5xl font-display uppercase tracking-wide text-balance"
-            style={{ color: 'var(--foreground)' }}
+            style={{ color: 'white' }}
           >
             Почему выбирают <span style={{ color: 'var(--gold)' }}>«Сварог»</span>
           </h2>
@@ -69,7 +69,7 @@ export function WhyUsSection() {
               >
                 <Icon className="w-6 h-6 group-hover:text-gold transition-colors" style={{ color: 'var(--gold)' }} />
               </div>
-              <h3 className="text-base font-bold uppercase tracking-wide mb-3" style={{ color: 'var(--foreground)' }}>
+              <h3 className="text-base font-bold uppercase tracking-wide mb-3" style={{ color: 'white' }}>
                 {title}
               </h3>
               <p className="text-sm leading-relaxed" style={{ color: 'var(--silver)' }}>{desc}</p>

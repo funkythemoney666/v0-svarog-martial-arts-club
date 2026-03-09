@@ -72,7 +72,7 @@ export function ReviewsSection() {
           </div>
           <h2
             className="text-4xl lg:text-5xl font-display uppercase tracking-wide text-balance"
-            style={{ color: 'var(--foreground)' }}
+            style={{ color: 'white' }}
           >
             Что говорят <span style={{ color: 'var(--gold)' }}>наши ученики</span>
           </h2>
@@ -90,7 +90,7 @@ export function ReviewsSection() {
                 &ldquo;{r.text}&rdquo;
               </p>
               <div className="flex items-center justify-between pt-2 border-t" style={{ borderColor: 'var(--dark-border)' }}>
-                <span className="text-sm font-bold" style={{ color: 'var(--foreground)' }}>{r.name}</span>
+                <span className="text-sm font-bold" style={{ color: 'white' }}>{r.name}</span>
                 <span
                   className="text-xs font-semibold uppercase tracking-wider px-2 py-0.5"
                   style={{ color: 'var(--gold)', backgroundColor: 'rgba(200,160,60,0.1)' }}

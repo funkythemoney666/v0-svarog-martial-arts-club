@@ -47,7 +47,7 @@ export function HeroSection() {
 
         <h1
           className="text-5xl sm:text-6xl lg:text-8xl font-display uppercase tracking-wide text-balance leading-none mb-6"
-          style={{ color: 'var(--foreground)' }}
+          style={{ color: 'white' }}
         >
           Клуб единоборств<br />
           <span style={{ color: 'var(--gold)' }}>«Сварог»</span>

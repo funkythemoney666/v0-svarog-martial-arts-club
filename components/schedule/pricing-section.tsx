@@ -101,7 +101,7 @@ function PricingCardComponent({ card }: { card: PricingCard }) {
       <div className="flex items-baseline gap-1 mb-7">
         <span
           className="text-5xl font-display"
-          style={{ color: card.featured ? 'var(--foreground)' : 'var(--foreground)' }}
+          style={{ color: card.featured ? 'white' : 'var(--foreground)' }}
         >
           {card.price}
         </span>
@@ -165,7 +165,7 @@ export function PricingSection() {
           </div>
           <h2
             className="text-3xl lg:text-4xl font-display uppercase tracking-wide text-balance"
-            style={{ color: 'var(--foreground)' }}
+            style={{ color: 'white' }}
           >
             Цены и <span style={{ color: 'var(--gold)' }}>абонементы</span>
           </h2>

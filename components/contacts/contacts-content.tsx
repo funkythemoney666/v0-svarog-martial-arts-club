@@ -81,14 +81,14 @@ export function ContactsContent() {
                           key={line}
                           href={href}
                           className="text-sm font-medium transition-colors hover:text-gold"
-                          style={{ color: 'var(--foreground)' }}
+                          style={{ color: 'white' }}
                         >
                           {line}
                         </a>
                       )
                     }
                     return (
-                      <span key={line} className="text-sm font-medium" style={{ color: 'var(--foreground)' }}>
+                      <span key={line} className="text-sm font-medium" style={{ color: 'white' }}>
                         {line}
                       </span>
                     )
@@ -108,7 +108,7 @@ export function ContactsContent() {
           >
             <div className="text-center">
               <MapPin className="w-10 h-10 mx-auto mb-3" style={{ color: 'var(--gold)' }} />
-              <p className="text-sm font-bold uppercase tracking-wide mb-1" style={{ color: 'var(--foreground)' }}>
+              <p className="text-sm font-bold uppercase tracking-wide mb-1" style={{ color: 'white' }}>
                 ул. Малыгина, д. 3, стр. 2
               </p>
               <p className="text-xs mb-4" style={{ color: 'var(--silver)' }}>СВАО, Москва</p>
@@ -141,7 +141,7 @@ export function ContactsContent() {
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <Icon className="w-5 h-5" style={{ color: 'var(--gold)' }} />
-                    <span className="text-sm font-bold uppercase tracking-wide" style={{ color: 'var(--foreground)' }}>
+                    <span className="text-sm font-bold uppercase tracking-wide" style={{ color: 'white' }}>
                       {title}
                     </span>
                   </div>
