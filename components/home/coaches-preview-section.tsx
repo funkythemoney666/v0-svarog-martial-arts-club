@@ -4,10 +4,11 @@ import { ArrowRight } from 'lucide-react'
 
 const coaches = [
   {
-    name: 'Дмитрий Новиков',
+    name: 'Сафиулин Дмитрий',
     title: 'Тренер по грэпплингу и BJJ',
     disciplines: ['Грэпплинг', 'BJJ'],
     achievement: 'Мастер спорта по грэпплингу',
+    image: '/images/coach-safiulin.jpg',
   },
   {
     name: 'Данилэ Валентин',
@@ -70,7 +71,7 @@ export function CoachesPreviewSection() {
                 style={{ backgroundColor: 'var(--dark-bg)' }}
               >
                 <Image
-                  src="/images/coach-placeholder.jpg"
+                  src={coach.image || "/images/coach-placeholder.jpg"}
                   alt={coach.name}
                   fill
                   className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
