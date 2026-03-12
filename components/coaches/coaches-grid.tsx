@@ -79,6 +79,7 @@ const coaches: Coach[] = [
       'Опыт любительских боёв 52-8',
     ],
     experience: '13 лет в боксе, 6 лет тренерской работы',
+    image: '/images/coach-stepan.jpg',
   },
   {
     name: 'Михаил',
