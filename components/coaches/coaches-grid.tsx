@@ -91,6 +91,7 @@ const coaches: Coach[] = [
       'Опыт стажировок в Таиланде',
     ],
     experience: '11 лет в спорте, 5 лет тренерской работы',
+    image: '/images/coach-mikhail.jpg',
   },
   {
     name: 'Никитин Никита',
