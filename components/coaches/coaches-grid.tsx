@@ -12,11 +12,12 @@ type Coach = {
   bio: string
   achievements: string[]
   experience: string
+  image?: string
 }
 
 const coaches: Coach[] = [
   {
-    name: 'Дмитрий Новиков',
+    name: 'Сафиулин Дмитрий',
     title: 'Тренер по грэпплингу и BJJ',
     disciplines: ['Грэпплинг', 'BJJ'],
     bio: 'Дмитрий занимается единоборствами с 2005 года. Специализируется на борцовской технике и бразильском джиу-джитсу. Готовит спортсменов для выступления на соревнованиях всех уровней.',
@@ -26,6 +27,7 @@ const coaches: Coach[] = [
       'Чемпион России по грэпплингу 2019',
     ],
     experience: '18 лет в спорте, 10 лет тренерской работы',
+    image: '/images/coach-safiulin.jpg',
   },
   {
     name: 'Данилэ Валентин',
@@ -143,7 +145,7 @@ export function CoachesGrid() {
                 style={{ backgroundColor: 'var(--dark-bg)' }}
               >
                 <Image
-                  src="/images/coach-placeholder.jpg"
+                  src={coach.image || "/images/coach-placeholder.jpg"}
                   alt={coach.name}
                   fill
                   className="object-cover opacity-75 group-hover:scale-105 transition-transform duration-500"
