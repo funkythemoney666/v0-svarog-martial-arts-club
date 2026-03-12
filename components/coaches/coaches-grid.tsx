@@ -104,6 +104,7 @@ const coaches: Coach[] = [
       'Опыт работы с детскими группами',
     ],
     experience: '9 лет в боксе, 4 года тренерской работы',
+    image: '/images/coach-nikitin.jpg',
   },
 ]
 
