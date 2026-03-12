@@ -40,7 +40,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <img
-              src="/images/svarog-logo.png"
+              src="/images/svarog-logo-header.png"
               alt="Сварог"
               className="h-12 lg:h-16 w-auto"
             />
