@@ -53,6 +53,7 @@ const coaches: Coach[] = [
       'Многократный чемпион Москвы',
     ],
     experience: '14 лет в спорте, 7 лет тренерской работы',
+    image: '/images/coach-titaev.jpg',
   },
   {
     name: 'Юрий Шашкой',

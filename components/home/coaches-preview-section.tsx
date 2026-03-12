@@ -22,6 +22,7 @@ const coaches = [
     title: 'Мастер спорта по рукопашному бою',
     disciplines: ['ММА', 'Рукопашный бой'],
     achievement: 'Многократный чемпион Москвы',
+    image: '/images/coach-titaev.jpg',
   },
 ]
 
