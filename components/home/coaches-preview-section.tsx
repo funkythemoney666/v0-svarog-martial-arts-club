@@ -15,6 +15,7 @@ const coaches = [
     title: 'Мастер спорта по рукопашному бою',
     disciplines: ['ММА', 'Бокс', 'Рукопашный бой'],
     achievement: 'Чемпион Москвы по ММА',
+    image: '/images/coach-danile.jpg',
   },
   {
     name: 'Титаев Андрей',

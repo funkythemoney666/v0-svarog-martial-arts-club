@@ -40,6 +40,7 @@ const coaches: Coach[] = [
       'Чемпион Москвы по ММА 2018',
     ],
     experience: '15 лет в спорте, 8 лет тренерской работы',
+    image: '/images/coach-danile.jpg',
   },
   {
     name: 'Титаев Андрей',
