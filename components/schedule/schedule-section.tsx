@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 type Class = {
   time: string
@@ -85,14 +85,18 @@ function getColor(discipline: string): string {
   return 'var(--silver)'
 }
 
-function getCurrentDayIndex(): number {
-  return new Date().getDay()
-}
-
 export function ScheduleSection() {
-  const todayIndex = getCurrentDayIndex()
-  const defaultDay = schedule.find((d) => d.dayIndex === todayIndex) ?? schedule[0]
-  const [activeDay, setActiveDay] = useState(defaultDay.day)
+  const [todayIndex, setTodayIndex] = useState<number | null>(null)
+  const [activeDay, setActiveDay] = useState(schedule[0].day)
+
+  useEffect(() => {
+    const currentDayIndex = new Date().getDay()
+    setTodayIndex(currentDayIndex)
+    const todaySchedule = schedule.find((d) => d.dayIndex === currentDayIndex)
+    if (todaySchedule) {
+      setActiveDay(todaySchedule.day)
+    }
+  }, [])
   const selectedDay = schedule.find((d) => d.day === activeDay) ?? schedule[0]
 
   return (
@@ -125,7 +129,7 @@ export function ScheduleSection() {
         {/* Day tabs */}
         <div className="flex overflow-x-auto gap-1 py-6 scrollbar-hide">
           {schedule.map((day) => {
-            const isToday = day.dayIndex === todayIndex
+            const isToday = todayIndex !== null && day.dayIndex === todayIndex
             const isActive = day.day === activeDay
             return (
               <button
@@ -164,7 +168,7 @@ export function ScheduleSection() {
             <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'var(--gold)' }}>
               {selectedDay.day}
             </span>
-            {selectedDay.dayIndex === todayIndex && (
+            {todayIndex !== null && selectedDay.dayIndex === todayIndex && (
               <span
                 className="text-xs font-semibold px-2 py-0.5 uppercase tracking-wide"
                 style={{ backgroundColor: 'var(--gold)', color: 'var(--dark-bg)' }}
