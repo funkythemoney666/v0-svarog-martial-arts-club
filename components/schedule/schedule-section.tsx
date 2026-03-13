@@ -165,9 +165,6 @@ export function ScheduleSection() {
             className="px-5 py-3 border-b flex items-center gap-3"
             style={{
               backgroundColor: 'var(--dark-bg)',
-              backgroundImage: 'url(/images/bg-black-pattern.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
               borderColor: 'var(--dark-border)'
             }}
           >

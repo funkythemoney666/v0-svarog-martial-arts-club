@@ -87,13 +87,10 @@ export function ReviewsSection() {
           {reviews.map((r) => (
             <div
               key={r.name}
-              className="p-7 border flex flex-col gap-4"
+              className="p-7 border flex flex-col gap-4 backdrop-blur-sm"
               style={{
                 borderColor: 'var(--dark-border)',
-                backgroundColor: 'var(--dark-surface)',
-                backgroundImage: 'url(/images/bg-grey-pattern.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundColor: 'rgba(18, 18, 18, 0.6)',
               }}
             >
               <StarRating count={r.stars} />

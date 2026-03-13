@@ -65,8 +65,8 @@ export function ContactsContent() {
             {contactCards.map(({ icon: Icon, label, lines, note, href1, href2 }) => (
               <div
                 key={label}
-                className="p-6 border flex flex-col gap-3"
-                style={{ borderColor: 'var(--dark-border)', backgroundColor: 'var(--dark-surface)' }}
+                className="p-6 border flex flex-col gap-3 backdrop-blur-sm"
+                style={{ borderColor: 'var(--dark-border)', backgroundColor: 'rgba(18, 18, 18, 0.6)' }}
               >
                 <div
                   className="w-10 h-10 flex items-center justify-center border"
@@ -108,13 +108,10 @@ export function ContactsContent() {
 
           {/* Map placeholder */}
           <div
-            className="w-full h-80 flex items-center justify-center border mb-14"
+            className="w-full h-80 flex items-center justify-center border mb-14 backdrop-blur-sm"
             style={{
               borderColor: 'var(--dark-border)',
-              backgroundColor: 'var(--dark-surface)',
-              backgroundImage: 'url(/images/bg-grey-pattern.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundColor: 'rgba(18, 18, 18, 0.6)',
             }}
           >
             <div className="text-center">
@@ -147,14 +144,11 @@ export function ContactsContent() {
               {directions.map(({ icon: Icon, title, desc }) => (
                 <div
                   key={title}
-                  className="p-6 border"
-                style={{
-                  borderColor: 'var(--dark-border)',
-                  backgroundColor: 'var(--dark-surface)',
-                  backgroundImage: 'url(/images/bg-grey-pattern.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
+                  className="p-6 border backdrop-blur-sm"
+                  style={{
+                    borderColor: 'var(--dark-border)',
+                    backgroundColor: 'rgba(18, 18, 18, 0.6)',
+                  }}
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <Icon className="w-5 h-5" style={{ color: 'var(--gold)' }} />

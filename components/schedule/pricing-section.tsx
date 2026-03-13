@@ -77,10 +77,7 @@ function PricingCardComponent({ card }: { card: PricingCard }) {
       }`}
       style={{
         borderColor: card.featured ? 'var(--gold)' : undefined,
-        backgroundColor: card.featured ? 'var(--dark-bg)' : 'var(--card)',
-        backgroundImage: card.featured ? 'url(/images/bg-grey-pattern.png)' : undefined,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundColor: card.featured ? 'rgba(18, 18, 18, 0.8)' : 'var(--card)',
       }}
     >
       {/* Badge */}

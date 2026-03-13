@@ -65,13 +65,10 @@ export function WhyUsSection() {
           {reasons.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="group p-7 border transition-all duration-200 hover:border-gold"
+              className="group p-7 border transition-all duration-200 hover:border-gold backdrop-blur-sm"
               style={{
                 borderColor: 'var(--dark-border)',
-                backgroundColor: 'var(--dark-surface)',
-                backgroundImage: 'url(/images/bg-grey-pattern.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundColor: 'rgba(18, 18, 18, 0.6)',
               }}
             >
               <div

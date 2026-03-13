@@ -94,13 +94,10 @@ export function CtaSection() {
 
           {/* Right: Form */}
           <div
-            className="p-8 border"
+            className="p-8 border backdrop-blur-sm"
             style={{
               borderColor: 'var(--dark-border)',
-              backgroundColor: 'var(--dark-surface)',
-              backgroundImage: 'url(/images/bg-grey-pattern.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundColor: 'rgba(18, 18, 18, 0.6)',
             }}
           >
             <h3 className="text-xl font-bold uppercase tracking-wide mb-6" style={{ color: 'white' }}>
