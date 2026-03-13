@@ -148,7 +148,12 @@ export function CoachesGrid() {
               {/* Image */}
               <div
                 className="relative h-72 overflow-hidden shrink-0"
-                style={{ backgroundColor: 'var(--dark-bg)' }}
+                style={{
+                  backgroundColor: 'var(--dark-bg)',
+                  backgroundImage: 'url(/images/bg-black-pattern.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
               >
                 <Image
                   src={coach.image || "/images/coach-placeholder.jpg"}

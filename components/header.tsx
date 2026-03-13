@@ -29,11 +29,17 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-[var(--dark-border)] ${
         scrolled
-          ? 'bg-[var(--dark-bg)] border-b border-[var(--dark-border)] shadow-lg shadow-black/40'
-          : 'bg-[var(--dark-bg)]/95 border-b border-[var(--dark-border)]'
+          ? 'shadow-lg shadow-black/40'
+          : ''
       }`}
+      style={{
+        backgroundColor: 'var(--dark-bg)',
+        backgroundImage: 'url(/images/bg-black-pattern.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -100,7 +106,13 @@ export function Header() {
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
-        style={{ backgroundColor: 'var(--dark-bg)', borderTop: '1px solid var(--dark-border)' }}
+        style={{
+          backgroundColor: 'var(--dark-bg)',
+          backgroundImage: 'url(/images/bg-black-pattern.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          borderTop: '1px solid var(--dark-border)'
+        }}
       >
         <div className="px-4 py-6 flex flex-col gap-4">
           {navLinks.map((link) => (

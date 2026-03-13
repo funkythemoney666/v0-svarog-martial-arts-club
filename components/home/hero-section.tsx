@@ -12,7 +12,12 @@ export function HeroSection() {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ backgroundColor: 'var(--dark-bg)' }}
+      style={{
+        backgroundColor: 'var(--dark-bg)',
+        backgroundImage: 'url(/images/bg-black-pattern.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Background image */}
       <div

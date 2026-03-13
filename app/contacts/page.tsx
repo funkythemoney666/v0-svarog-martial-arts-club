@@ -16,7 +16,12 @@ export default function ContactsPage() {
         {/* Page hero */}
         <div
           className="pt-32 pb-16 px-4"
-          style={{ backgroundColor: 'var(--dark-bg)' }}
+          style={{
+            backgroundColor: 'var(--dark-bg)',
+            backgroundImage: 'url(/images/bg-black-pattern.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
         >
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-6 mb-8">

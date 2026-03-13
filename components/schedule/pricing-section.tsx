@@ -78,6 +78,9 @@ function PricingCardComponent({ card }: { card: PricingCard }) {
       style={{
         borderColor: card.featured ? 'var(--gold)' : undefined,
         backgroundColor: card.featured ? 'var(--dark-bg)' : 'var(--card)',
+        backgroundImage: card.featured ? 'url(/images/bg-grey-pattern.png)' : undefined,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       {/* Badge */}
@@ -152,7 +155,12 @@ export function PricingSection() {
   return (
     <section
       className="py-16 lg:py-24"
-      style={{ backgroundColor: 'var(--dark-bg)' }}
+      style={{
+        backgroundColor: 'var(--dark-bg)',
+        backgroundImage: 'url(/images/bg-black-pattern.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

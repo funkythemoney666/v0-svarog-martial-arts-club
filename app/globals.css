@@ -127,4 +127,18 @@
   .font-display {
     font-family: var(--font-display), var(--font-sans);
   }
+  .bg-pattern-black {
+    background-color: var(--dark-bg);
+    background-image: url('/images/bg-black-pattern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-pattern-grey {
+    background-color: var(--dark-surface);
+    background-image: url('/images/bg-grey-pattern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

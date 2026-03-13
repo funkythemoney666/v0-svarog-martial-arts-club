@@ -89,7 +89,12 @@ export function DisciplinesSection() {
           {/* CTA cell */}
           <div
             className="bg-background p-6 lg:p-7 flex flex-col justify-between border-0"
-            style={{ backgroundColor: 'var(--dark-bg)' }}
+            style={{
+              backgroundColor: 'var(--dark-bg)',
+              backgroundImage: 'url(/images/bg-black-pattern.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
           >
             <p className="text-base font-medium leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.7)' }}>
               Не знаете с чего начать? Приходите на пробную тренировку — тренер поможет выбрать направление.

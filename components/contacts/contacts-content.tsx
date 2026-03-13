@@ -53,7 +53,12 @@ export function ContactsContent() {
       {/* Contact info section */}
       <section
         className="py-16 lg:py-20"
-        style={{ backgroundColor: 'var(--dark-bg)' }}
+        style={{
+          backgroundColor: 'var(--dark-bg)',
+          backgroundImage: 'url(/images/bg-black-pattern.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
@@ -104,7 +109,13 @@ export function ContactsContent() {
           {/* Map placeholder */}
           <div
             className="w-full h-80 flex items-center justify-center border mb-14"
-            style={{ borderColor: 'var(--dark-border)', backgroundColor: 'var(--dark-surface)' }}
+            style={{
+              borderColor: 'var(--dark-border)',
+              backgroundColor: 'var(--dark-surface)',
+              backgroundImage: 'url(/images/bg-grey-pattern.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
           >
             <div className="text-center">
               <MapPin className="w-10 h-10 mx-auto mb-3" style={{ color: 'var(--gold)' }} />
@@ -137,7 +148,13 @@ export function ContactsContent() {
                 <div
                   key={title}
                   className="p-6 border"
-                  style={{ borderColor: 'var(--dark-border)', backgroundColor: 'var(--dark-surface)' }}
+                style={{
+                  borderColor: 'var(--dark-border)',
+                  backgroundColor: 'var(--dark-surface)',
+                  backgroundImage: 'url(/images/bg-grey-pattern.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <Icon className="w-5 h-5" style={{ color: 'var(--gold)' }} />

@@ -163,7 +163,13 @@ export function ScheduleSection() {
         >
           <div
             className="px-5 py-3 border-b flex items-center gap-3"
-            style={{ backgroundColor: 'var(--dark-bg)', borderColor: 'var(--dark-border)' }}
+            style={{
+              backgroundColor: 'var(--dark-bg)',
+              backgroundImage: 'url(/images/bg-black-pattern.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              borderColor: 'var(--dark-border)'
+            }}
           >
             <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'var(--gold)' }}>
               {selectedDay.day}

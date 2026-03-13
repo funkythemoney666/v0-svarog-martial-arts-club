@@ -37,7 +37,12 @@ export function WhyUsSection() {
   return (
     <section
       className="py-20 lg:py-28"
-      style={{ backgroundColor: 'var(--dark-bg)' }}
+      style={{
+        backgroundColor: 'var(--dark-bg)',
+        backgroundImage: 'url(/images/bg-black-pattern.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -61,7 +66,13 @@ export function WhyUsSection() {
             <div
               key={title}
               className="group p-7 border transition-all duration-200 hover:border-gold"
-              style={{ borderColor: 'var(--dark-border)', backgroundColor: 'var(--dark-surface)' }}
+              style={{
+                borderColor: 'var(--dark-border)',
+                backgroundColor: 'var(--dark-surface)',
+                backgroundImage: 'url(/images/bg-grey-pattern.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
             >
               <div
                 className="w-12 h-12 flex items-center justify-center border mb-5 group-hover:border-gold transition-colors"

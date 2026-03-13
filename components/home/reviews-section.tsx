@@ -59,7 +59,12 @@ export function ReviewsSection() {
   return (
     <section
       className="py-20 lg:py-28"
-      style={{ backgroundColor: 'var(--dark-bg)' }}
+      style={{
+        backgroundColor: 'var(--dark-bg)',
+        backgroundImage: 'url(/images/bg-black-pattern.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -83,7 +88,13 @@ export function ReviewsSection() {
             <div
               key={r.name}
               className="p-7 border flex flex-col gap-4"
-              style={{ borderColor: 'var(--dark-border)', backgroundColor: 'var(--dark-surface)' }}
+              style={{
+                borderColor: 'var(--dark-border)',
+                backgroundColor: 'var(--dark-surface)',
+                backgroundImage: 'url(/images/bg-grey-pattern.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
             >
               <StarRating count={r.stars} />
               <p className="text-sm leading-relaxed flex-1" style={{ color: 'rgba(255,255,255,0.75)' }}>

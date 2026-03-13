@@ -6,7 +6,12 @@ export function CtaSection() {
   return (
     <section
       className="py-20 lg:py-28 relative overflow-hidden"
-      style={{ backgroundColor: 'var(--dark-bg)' }}
+      style={{
+        backgroundColor: 'var(--dark-bg)',
+        backgroundImage: 'url(/images/bg-black-pattern.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Gold accent line */}
       <div
@@ -90,7 +95,13 @@ export function CtaSection() {
           {/* Right: Form */}
           <div
             className="p-8 border"
-            style={{ borderColor: 'var(--dark-border)', backgroundColor: 'var(--dark-surface)' }}
+            style={{
+              borderColor: 'var(--dark-border)',
+              backgroundColor: 'var(--dark-surface)',
+              backgroundImage: 'url(/images/bg-grey-pattern.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
           >
             <h3 className="text-xl font-bold uppercase tracking-wide mb-6" style={{ color: 'white' }}>
               Оставить заявку
