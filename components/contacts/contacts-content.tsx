@@ -56,8 +56,9 @@ export function ContactsContent() {
         style={{
           backgroundColor: 'var(--dark-bg)',
           backgroundImage: 'url(/images/bg-black-pattern.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: 'auto',
+          backgroundPosition: 'top left',
+          backgroundRepeat: 'repeat',
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -179,7 +180,7 @@ export function ContactsContent() {
                 Запишитесь на <span style={{ color: 'var(--gold)' }}>тренировку</span>
               </h2>
               <p className="text-base leading-relaxed mb-8" style={{ color: 'var(--silver)' }}>
-                Оставьте заявку — тренер свяжется с вами и подберёт удобное время для первой пробной тренировки.
+                Оставь��е заявку — тренер свяжется с вами и подберёт удобное время для первой пробной тренировки.
               </p>
               <div className="p-6 border-l-2" style={{ borderColor: 'var(--gold)', backgroundColor: 'var(--card)' }}>
                 <p className="text-sm font-semibold mb-1">Пробная тренировка — бесплатно</p>

@@ -20,8 +20,9 @@ export default function CoachesPage() {
           style={{
             backgroundColor: 'var(--dark-bg)',
             backgroundImage: 'url(/images/bg-black-pattern.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: 'auto',
+            backgroundPosition: 'top left',
+            backgroundRepeat: 'repeat',
           }}
         >
           <div className="max-w-7xl mx-auto">
