@@ -19,7 +19,7 @@ type DaySchedule = {
 const mondayClasses: Class[] = [
   { time: '16:00', discipline: 'Грэпплинг', tag: 'дети' },
   { time: '17:30', discipline: 'Тайский бокс', coach: 'Михаил', tag: 'дети' },
-  { time: '17:30', discipline: 'Рукопашный бой', coach: 'Андрей Титаев', tag: 'дети' },
+  { time: '17:30', discipline: 'Рукопашный бой', coach: 'Валентин Данилэ', tag: 'дети' },
   { time: '19:00', discipline: 'Бокс', coach: 'Никитин Никита' },
   { time: '19:00', discipline: 'Тайский бокс', coach: 'Михаил' },
   { time: '20:30', discipline: 'ММА', coach: 'Валентин Данилэ' },
