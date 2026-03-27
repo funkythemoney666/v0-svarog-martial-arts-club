@@ -38,7 +38,7 @@ export function Header() {
         backgroundColor: 'var(--dark-bg)',
         backgroundImage: 'url(/images/bg-black-pattern.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
       }}
     >
@@ -111,7 +111,7 @@ export function Header() {
           backgroundColor: 'var(--dark-bg)',
           backgroundImage: 'url(/images/bg-black-pattern.png)',
           backgroundSize: 'cover',
-          backgroundPosition: 'center bottom',
+          backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat',
           borderTop: '1px solid var(--dark-border)'
         }}

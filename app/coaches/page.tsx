@@ -21,7 +21,7 @@ export default function CoachesPage() {
             backgroundColor: 'var(--dark-bg)',
             backgroundImage: 'url(/images/bg-black-pattern.png)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center bottom',
+            backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
           }}
         >
