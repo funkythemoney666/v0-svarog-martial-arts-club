@@ -21,9 +21,9 @@ export default function SchedulePricesPage() {
           style={{
             backgroundColor: 'var(--dark-bg)',
             backgroundImage: 'url(/images/bg-black-pattern.png)',
-            backgroundSize: 'auto',
-            backgroundPosition: 'top left',
-            backgroundRepeat: 'repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center bottom',
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <div className="max-w-7xl mx-auto">

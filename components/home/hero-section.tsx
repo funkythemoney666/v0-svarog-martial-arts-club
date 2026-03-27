@@ -15,9 +15,9 @@ export function HeroSection() {
       style={{
         backgroundColor: 'var(--dark-bg)',
         backgroundImage: 'url(/images/bg-black-pattern.png)',
-        backgroundSize: 'auto',
-        backgroundPosition: 'top left',
-        backgroundRepeat: 'repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center bottom',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       {/* Background image */}
