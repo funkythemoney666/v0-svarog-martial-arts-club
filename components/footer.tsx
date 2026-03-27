@@ -9,7 +9,7 @@ export function Footer() {
         backgroundColor: 'var(--dark-bg)',
         backgroundImage: 'url(/images/bg-black-pattern.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center bottom',
         backgroundRepeat: 'no-repeat',
         borderColor: 'var(--dark-border)',
         color: 'var(--foreground)'

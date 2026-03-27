@@ -20,7 +20,7 @@ export default function ContactsPage() {
             backgroundColor: 'var(--dark-bg)',
             backgroundImage: 'url(/images/bg-black-pattern.png)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center center',
+            backgroundPosition: 'center bottom',
             backgroundRepeat: 'no-repeat',
           }}
         >
