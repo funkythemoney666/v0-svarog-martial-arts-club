@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Instagram, Youtube } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram, Youtube, Send } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -104,7 +104,9 @@ export function Footer() {
             </h3>
             <div className="flex gap-3 mb-6">
               <a
-                href="#"
+                href="https://www.instagram.com/svarog_club/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center border rounded transition-all hover:border-gold hover:text-gold"
                 style={{ borderColor: 'var(--dark-border)', color: 'var(--silver)' }}
                 aria-label="Instagram"
@@ -112,21 +114,34 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%92%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2-%D0%B51%D1%82"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center border rounded transition-all hover:border-gold hover:text-gold"
                 style={{ borderColor: 'var(--dark-border)', color: 'var(--silver)' }}
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
               </a>
-              {/* VK icon */}
               <a
-                href="#"
+                href="https://vk.com/svarog_boxing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center border rounded transition-all hover:border-gold hover:text-gold text-xs font-bold"
                 style={{ borderColor: 'var(--dark-border)', color: 'var(--silver)' }}
                 aria-label="ВКонтакте"
               >
                 VK
+              </a>
+              <a
+                href="https://t.me/svarogfight"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center border rounded transition-all hover:border-gold hover:text-gold"
+                style={{ borderColor: 'var(--dark-border)', color: 'var(--silver)' }}
+                aria-label="Telegram"
+              >
+                <Send className="w-5 h-5" />
               </a>
             </div>
             <p className="text-xs" style={{ color: 'var(--silver)' }}>
