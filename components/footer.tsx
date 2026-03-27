@@ -7,9 +7,9 @@ export function Footer() {
       className="border-t"
       style={{
         backgroundColor: 'var(--dark-bg)',
-        backgroundImage: 'url(/images/bg-black-pattern.png)',
+        backgroundImage: 'url(/images/bg-header-footer.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         borderColor: 'var(--dark-border)',
         color: 'var(--foreground)'
