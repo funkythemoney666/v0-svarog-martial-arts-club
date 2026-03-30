@@ -20,7 +20,7 @@ const mondayClasses: Class[] = [
   { time: '16:00', discipline: 'Грэпплинг', tag: 'дети' },
   { time: '17:30', discipline: 'Тайский бокс', coach: 'Михаил', tag: 'дети' },
   { time: '17:30', discipline: 'Рукопашный бой', coach: 'Валентин Данилэ', tag: 'дети' },
-  { time: '19:00', discipline: 'Бокс', coach: 'Никитин Никита' },
+  { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
   { time: '19:00', discipline: 'Тайский бокс', coach: 'Михаил' },
   { time: '20:30', discipline: 'ММА', coach: 'Валентин Данилэ' },
   { time: '21:00', discipline: 'Грэпплинг', coach: 'Дмитрий Новиков' },
@@ -29,11 +29,11 @@ const mondayClasses: Class[] = [
 
 const tuesdayClasses: Class[] = [
   { time: '11:00', discipline: 'Бокс', coach: 'Степан Степанович', tag: 'по записи' },
-  { time: '17:30', discipline: 'Бокс', coach: 'Никитин Никита', tag: 'дети' },
+  { time: '17:30', discipline: 'Бокс', coach: 'Андрей Евгеньевич', tag: 'дети' },
   { time: '17:30', discipline: 'Капоэйра' },
   { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
   { time: '19:00', discipline: 'Рукопашный бой', coach: 'Андрей Титаев', tag: 'дети' },
-  { time: '20:30', discipline: 'Рукопашный бой', coach: 'Валентин Данилэ' },
+  { time: '20:30', discipline: 'Рукопашный бой', coach: 'Титаев Андрей' },
   { time: '21:00', discipline: 'Тайский бокс', coach: 'Михаил' },
 ]
 
@@ -49,7 +49,7 @@ const schedule: DaySchedule[] = [
     dayIndex: 6,
     classes: [
       { time: '10:00', discipline: 'Рукопашный бой', coach: 'Валентин Данилэ', tag: 'общая группа' },
-      { time: '11:30', discipline: 'Бокс', coach: 'Михаил Алексеевич', tag: 'дети' },
+      { time: '11:30', discipline: 'Бокс', coach: 'Андрей Евгеньевич', tag: 'дети' },
       { time: '13:00', discipline: 'Тайский бокс', coach: 'Михаил' },
       { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
       { time: '21:00', discipline: 'Ножевой бой', coach: 'Юрий Шашкой' },
