@@ -23,7 +23,6 @@ const mondayClasses: Class[] = [
   { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
   { time: '19:00', discipline: 'Тайский бокс', coach: 'Михаил' },
   { time: '20:30', discipline: 'ММА', coach: 'Валентин Данилэ' },
-  { time: '21:00', discipline: 'Грэпплинг', coach: 'Дмитрий Новиков' },
   { time: '22:00', discipline: 'Бокс', coach: 'Степан Степанович' },
 ]
 
@@ -31,7 +30,7 @@ const tuesdayClasses: Class[] = [
   { time: '11:00', discipline: 'Бокс', coach: 'Степан Степанович', tag: 'по записи' },
   { time: '17:30', discipline: 'Бокс', coach: 'Андрей Евгеньевич', tag: 'дети' },
   { time: '17:30', discipline: 'Капоэйра' },
-  { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
+  { time: '19:00', discipline: 'Бокс', coach: 'Никитин Никита' },
   { time: '19:00', discipline: 'Рукопашный бой', coach: 'Андрей Титаев', tag: 'дети' },
   { time: '20:30', discipline: 'Рукопашный бой', coach: 'Титаев Андрей' },
   { time: '21:00', discipline: 'Тайский бокс', coach: 'Михаил' },
@@ -48,7 +47,7 @@ const schedule: DaySchedule[] = [
     shortDay: 'Сб',
     dayIndex: 6,
     classes: [
-      { time: '10:00', discipline: 'Рукопашный бой', coach: 'Валентин Данилэ', tag: 'общая группа' },
+      { time: '10:00', discipline: 'Рукопашный бой', coach: 'Титаев Андрей', tag: 'общая группа' },
       { time: '11:30', discipline: 'Бокс', coach: 'Андрей Евгеньевич', tag: 'дети' },
       { time: '13:00', discipline: 'Тайский бокс', coach: 'Михаил' },
       { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
@@ -60,7 +59,7 @@ const schedule: DaySchedule[] = [
     shortDay: 'Вс',
     dayIndex: 0,
     classes: [
-      { time: '11:00', discipline: 'Открытый ковёр' },
+      { time: '11:00', discipline: 'Открытый ковёр (Грэпплинг)', tag: 'по греплингу' },
       { time: '19:00', discipline: 'Спарринги по боксу', coach: 'Степан Степанович' },
     ],
   },
