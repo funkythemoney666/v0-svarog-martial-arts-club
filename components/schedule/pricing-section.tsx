@@ -14,7 +14,7 @@ type PricingCard = {
 const adultPricing: PricingCard[] = [
   {
     title: 'Разовое посещение',
-    price: '800',
+    price: '900',
     features: [
       'Одна тренировка',
       'Доступ ко всем залам',
@@ -24,10 +24,11 @@ const adultPricing: PricingCard[] = [
     cta: 'Записаться',
   },
   {
-    title: 'Абонемент на 12 тренировок',
-    price: '7 000',
+    title: 'Абонемент на месяц',
+    price: '8 000',
+    period: '/ месяц',
     features: [
-      '12 тренировок',
+      'Безлимитное посещение',
       'Все направления',
       'Работа с тренером',
       'Душевые и раздевалки',
@@ -55,7 +56,7 @@ const adultPricing: PricingCard[] = [
 const childPricing: PricingCard[] = [
   {
     title: 'Разовое посещение',
-    price: '600',
+    price: '700',
     features: [
       'Одна детская тренировка',
       'Работа с тренером',
@@ -66,9 +67,10 @@ const childPricing: PricingCard[] = [
   },
   {
     title: 'Детский абонемент',
-    price: '6 000',
+    price: '7 000',
+    period: '/ месяц',
     features: [
-      '12 тренировок',
+      'Безлимитное посещение',
       'Детские группы',
       'Индивидуальный подход',
       'Физическая подготовка',
@@ -78,6 +80,52 @@ const childPricing: PricingCard[] = [
     featured: true,
   },
 ]
+
+type LongTermPlan = {
+  duration: string
+  price: string
+  discount: string
+}
+
+const adultLongTerm: LongTermPlan[] = [
+  { duration: '3 месяца', price: '22 800', discount: '−5%' },
+  { duration: '6 месяцев', price: '43 200', discount: '−10%' },
+  { duration: '12 месяцев', price: '81 600', discount: '−15%' },
+]
+
+const childLongTerm: LongTermPlan[] = [
+  { duration: '3 месяца', price: '20 000', discount: '−5%' },
+  { duration: '6 месяцев', price: '37 800', discount: '−10%' },
+  { duration: '12 месяцев', price: '71 400', discount: '−15%' },
+]
+
+function LongTermCards({ plans }: { plans: LongTermPlan[] }) {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mt-5">
+      {plans.map((plan) => (
+        <div
+          key={plan.duration}
+          className="relative flex flex-col items-center text-center p-6 border transition-all duration-200 hover:border-gold/40"
+          style={{ borderColor: 'var(--border)', backgroundColor: 'var(--card)' }}
+        >
+          <span
+            className="absolute -top-3 right-4 text-xs font-bold uppercase tracking-widest px-2 py-1"
+            style={{ backgroundColor: 'var(--gold)', color: 'var(--dark-bg)' }}
+          >
+            {plan.discount}
+          </span>
+          <span className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--silver)' }}>
+            {plan.duration}
+          </span>
+          <div className="flex items-baseline gap-1">
+            <span className="text-3xl font-display" style={{ color: 'var(--foreground)' }}>{plan.price}</span>
+            <span className="text-sm" style={{ color: 'var(--silver)' }}>₽</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 function PricingCardComponent({ card }: { card: PricingCard }) {
   return (
@@ -202,6 +250,10 @@ export function PricingSection() {
               <PricingCardComponent key={card.title} card={card} />
             ))}
           </div>
+          <p className="text-center text-xs uppercase tracking-widest mt-10 mb-1" style={{ color: 'var(--gold)' }}>
+            Абонемент на длительный срок
+          </p>
+          <LongTermCards plans={adultLongTerm} />
         </div>
 
         {/* Children */}
@@ -219,6 +271,10 @@ export function PricingSection() {
               <PricingCardComponent key={card.title} card={card} />
             ))}
           </div>
+          <p className="text-center text-xs uppercase tracking-widest mt-10 mb-1" style={{ color: 'var(--gold)' }}>
+            Абонемент на длительный срок
+          </p>
+          <LongTermCards plans={childLongTerm} />
         </div>
       </div>
     </section>
