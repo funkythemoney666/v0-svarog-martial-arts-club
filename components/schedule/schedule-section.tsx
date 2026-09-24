@@ -17,12 +17,13 @@ type DaySchedule = {
 }
 
 const mondayClasses: Class[] = [
+  { time: '16:00', discipline: 'Детское самбо (идёт набор)', coach: 'Повидаш Виталий', tag: 'дети' },
   { time: '16:00', discipline: 'Грэпплинг', tag: 'дети' },
   { time: '17:30', discipline: 'Тайский бокс', coach: 'Михаил', tag: 'дети' },
-  { time: '17:30', discipline: 'Рукопашный бой', coach: 'Валентин Данилэ', tag: 'дети' },
+  { time: '17:30', discipline: 'Рукопашный бой', coach: 'Иван Быков', tag: 'дети' },
   { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
   { time: '19:00', discipline: 'Тайский бокс', coach: 'Михаил' },
-  { time: '20:30', discipline: 'ММА', coach: 'Валентин Данилэ' },
+  { time: '20:30', discipline: 'ММА', coach: 'Иван Быков' },
   { time: '22:00', discipline: 'Бокс', coach: 'Степан Степанович' },
 ]
 
@@ -71,6 +72,7 @@ const disciplineColors: Record<string, string> = {
   'Грэпплинг': '#6ec6e8',
   'Тайский бокс': '#e86e6e',
   'Рукопашный бой': '#9bca6e',
+  'Самбо': '#e8a26e',
   'Ножевой бой': '#b06ecc',
   'Капоэйра': '#e8c26e',
   'Открытый ковёр': 'var(--silver)',

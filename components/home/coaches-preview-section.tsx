@@ -11,11 +11,11 @@ const coaches = [
     image: '/images/coach-safiulin.jpg',
   },
   {
-    name: 'Данилэ Валентин',
-    title: 'Мастер спорта по рукопашному бою',
-    disciplines: ['ММА', 'Бокс', 'Рукопашный бой'],
-    achievement: 'Чемпион Москвы по ММА',
-    image: '/images/coach-danile.jpg',
+    name: 'Быков Иван Сергеевич',
+    title: 'Тренер по ММА и грэпплингу',
+    disciplines: ['ММА', 'Грэпплинг', 'Рукопашный бой'],
+    achievement: 'Чемпион Московской области по грэпплингу UWW 2024',
+    image: '/images/coach-bykov.png',
   },
   {
     name: 'Титаев Андрей',
