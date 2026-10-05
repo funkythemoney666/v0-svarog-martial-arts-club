@@ -76,7 +76,7 @@ const childPricing: PricingCard[] = [
       'Физическая подготовка',
       'Участие в турнирах',
     ],
-    cta: 'Пробная тренировка',
+    cta: 'Записаться',
     featured: true,
   },
 ]
@@ -190,16 +190,6 @@ function PricingCardComponent({ card }: { card: PricingCard }) {
           }}
         >
           {card.cta}
-        </Link>
-        <Link
-          href="/contacts"
-          className="block text-center py-3 text-sm font-bold uppercase tracking-widest border transition-all hover:border-gold hover:text-gold"
-          style={{
-            borderColor: card.featured ? 'rgba(255,255,255,0.2)' : 'var(--border)',
-            color: card.featured ? 'rgba(255,255,255,0.7)' : 'var(--silver)',
-          }}
-        >
-          Пробная тренировка
         </Link>
       </div>
     </div>

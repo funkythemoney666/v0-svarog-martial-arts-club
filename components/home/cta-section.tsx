@@ -1,6 +1,5 @@
-import Link from 'next/link'
 import { Phone, MapPin } from 'lucide-react'
-import { SignupForm } from '@/components/signup-form'
+import { BookingContacts } from '@/components/booking-contacts'
 
 export function CtaSection() {
   return (
@@ -38,7 +37,7 @@ export function CtaSection() {
               Запишитесь на тренировку в <span style={{ color: 'var(--gold)' }}>«Сварог»</span>
             </h2>
             <p className="text-base leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.65)' }}>
-              Неважно, новичок вы или опытный спортсмен — в «Сварог» найдётся место для каждого. Приходите на пробную тренировку и убедитесь в этом лично.
+              Неважно, новичок вы или опытный спортсмен — в «Сварог» найдётся место для каждого. Свяжитесь с нами, чтобы выбрать направление и записаться на тренировку.
             </p>
 
             <div className="flex flex-col gap-4">
@@ -102,9 +101,9 @@ export function CtaSection() {
             }}
           >
             <h3 className="text-xl font-bold uppercase tracking-wide mb-6" style={{ color: 'white' }}>
-              Оставить заявку
+              Свяжитесь с нами
             </h3>
-            <SignupForm dark />
+            <BookingContacts dark />
           </div>
         </div>
       </div>

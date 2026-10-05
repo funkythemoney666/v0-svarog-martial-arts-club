@@ -4,11 +4,11 @@ import { ArrowRight } from 'lucide-react'
 
 const coaches = [
   {
-    name: 'Сафиулин Дмитрий',
+    name: 'Горбуненко Александр Владимирович',
     title: 'Тренер по грэпплингу и BJJ',
     disciplines: ['Грэпплинг', 'BJJ'],
-    achievement: 'Мастер спорта по грэпплингу',
-    image: '/images/coach-safiulin.jpg',
+    achievement: 'Пурпурный пояс BJJ · Чемпион Мурманской области по грэпплингу',
+    image: '/images/coach-gorbunenko.png',
   },
   {
     name: 'Быков Иван Сергеевич',

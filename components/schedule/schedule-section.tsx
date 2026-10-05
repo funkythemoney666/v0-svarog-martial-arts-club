@@ -17,8 +17,7 @@ type DaySchedule = {
 }
 
 const mondayClasses: Class[] = [
-  { time: '16:00', discipline: 'Детское самбо (идёт набор)', coach: 'Повидаш Виталий', tag: 'дети' },
-  { time: '16:00', discipline: 'Грэпплинг', tag: 'дети' },
+  { time: '16:00', discipline: 'Детское самбо', coach: 'Повидаш Виталий', tag: 'дети' },
   { time: '17:30', discipline: 'Тайский бокс', coach: 'Михаил', tag: 'дети' },
   { time: '17:30', discipline: 'Рукопашный бой', coach: 'Иван Быков', tag: 'дети' },
   { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
@@ -51,7 +50,7 @@ const schedule: DaySchedule[] = [
       { time: '10:00', discipline: 'Рукопашный бой', coach: 'Титаев Андрей', tag: 'общая группа' },
       { time: '11:30', discipline: 'Бокс', coach: 'Андрей Евгеньевич', tag: 'дети' },
       { time: '13:00', discipline: 'Тайский бокс', coach: 'Михаил' },
-      { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
+      { time: '19:00', discipline: 'Бокс', coach: 'Никитин Никита' },
       { time: '21:00', discipline: 'Ножевой бой', coach: 'Юрий Шашкой' },
     ],
   },
@@ -60,7 +59,7 @@ const schedule: DaySchedule[] = [
     shortDay: 'Вс',
     dayIndex: 0,
     classes: [
-      { time: '11:00', discipline: 'Открытый ковёр (Грэпплинг)', tag: 'по греплингу' },
+      { time: '11:00', discipline: 'Открытый ковёр (Грэпплинг)', coach: 'Горбуненко Александр Владимирович', tag: 'по греплингу' },
       { time: '19:00', discipline: 'Спарринги по боксу', coach: 'Степан Степанович' },
     ],
   },
