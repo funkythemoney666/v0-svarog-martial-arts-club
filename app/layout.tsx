@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { PromotionalBanner } from '@/components/promotional-banner'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -31,7 +30,6 @@ export default function RootLayout({
     <html lang="ru" className={`${inter.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
-        <PromotionalBanner />
       </body>
     </html>
   )
