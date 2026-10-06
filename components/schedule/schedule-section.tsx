@@ -23,6 +23,7 @@ const mondayClasses: Class[] = [
   { time: '19:00', discipline: 'Бокс', coach: 'Михаил Алексеевич' },
   { time: '19:00', discipline: 'Тайский бокс', coach: 'Михаил' },
   { time: '20:30', discipline: 'ММА', coach: 'Иван Быков' },
+  { time: '21:00', discipline: 'Грэпплинг', coach: 'Горбуненко Александр Владимирович' },
   { time: '22:00', discipline: 'Бокс', coach: 'Степан Степанович' },
 ]
 
