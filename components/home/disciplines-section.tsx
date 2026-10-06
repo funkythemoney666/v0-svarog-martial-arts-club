@@ -94,14 +94,14 @@ export function DisciplinesSection() {
             }}
           >
             <p className="text-base font-medium leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.7)' }}>
-              Не знаете с чего начать? Приходите на пробную тренировку — тренер поможет выбрать направление.
+              Не знаете с чего начать? Позвоните или напишите нам — тренер поможет выбрать направление.
             </p>
             <Link
               href="/contacts"
               className="inline-block text-center px-6 py-3 text-sm font-bold uppercase tracking-widest transition-all hover:opacity-90"
               style={{ backgroundColor: 'var(--gold)', color: 'var(--dark-bg)' }}
             >
-              Пробная тренировка
+              Связаться с клубом
             </Link>
           </div>
         </div>

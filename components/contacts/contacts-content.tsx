@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Clock, Train, Car } from 'lucide-react'
-import { SignupForm } from '@/components/signup-form'
+import { BookingContacts } from '@/components/booking-contacts'
 
 const contactCards = [
   {
@@ -190,20 +190,14 @@ export function ContactsContent() {
                 Запишитесь на <span style={{ color: 'var(--gold)' }}>тренировку</span>
               </h2>
               <p className="text-base leading-relaxed mb-8" style={{ color: 'var(--silver)' }}>
-                Оставь��е заявку — тренер свяжется с вами и подберёт удобное время для первой пробной тренировки.
+                Позвоните нам или напишите в соцсетях — поможем выбрать направление и удобное время для тренировки.
               </p>
-              <div className="p-6 border-l-2" style={{ borderColor: 'var(--gold)', backgroundColor: 'var(--card)' }}>
-                <p className="text-sm font-semibold mb-1">Пробная тренировка — бесплатно</p>
-                <p className="text-sm" style={{ color: 'var(--silver)' }}>
-                  Для новых учеников первая тренировка проводится бесплатно. Приходите и убедитесь в качестве лично.
-                </p>
-              </div>
             </div>
             <div
               className="p-8 border"
               style={{ borderColor: 'var(--border)', backgroundColor: 'var(--card)' }}
             >
-              <SignupForm />
+              <BookingContacts />
             </div>
           </div>
         </div>

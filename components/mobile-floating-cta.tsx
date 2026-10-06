@@ -25,7 +25,7 @@ export function MobileFloatingCta() {
         className="flex items-center gap-2 px-6 py-3.5 text-sm font-bold uppercase tracking-widest shadow-xl shadow-black/60"
         style={{ backgroundColor: 'var(--gold)', color: 'var(--dark-bg)' }}
       >
-        Записаться на пробную тренировку
+        Записаться на тренировку
       </Link>
     </div>
   )
